@@ -49,7 +49,7 @@ customize it when you are ready for it.
 ### `cd server && yarn dev`
 
 Runs the server in the development mode.\
-Open [http://localhost:5000](http://localhost:3001) or on port you declared in `.env` file in servers directory to run
+Open [http://localhost:3001](http://localhost:3001) or on port you declared in `.env` file in servers directory to run
 it.
 
 The server will reload if you make edits.\
