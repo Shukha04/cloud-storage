@@ -1,0 +1,139 @@
+@import '../../utils/colors';
+
+.disk {
+	margin-top: 20px;
+
+	&__btns {
+		display: flex;
+	}
+
+	&__create {
+		margin-left: 10px;
+	}
+
+	&__upload-input {
+		display: none;
+	}
+
+	&__upload-label {
+		border: 2px dashed $font-color;
+		padding: 5px 10px;
+		cursor: pointer;
+		margin-left: 10px;
+		display: block;
+	}
+
+	&__select {
+		margin-left: auto;
+	}
+
+	&__list, &__plate {
+		height: 20px;
+		width: 20px;
+		border: none;
+		border-radius: 0;
+		outline: none;
+		cursor: pointer;
+		background: no-repeat center center;
+		background-size: contain;
+		margin: 0 10px;
+	}
+
+	&__list {
+		background-image: url('../../assets/img/list.svg');
+	}
+
+	&__plate {
+		background-image: url('../../assets/img/plate.svg');
+	}
+}
+
+.popup {
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	&__content {
+		width: 400px;
+		background: #FFFFFF;
+		padding: 20px;
+		border-radius: 12px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__create {
+		align-self: flex-end;
+		padding: 10px;
+		cursor: pointer;
+		border: none;
+		background-color: $bg-color;
+		border-radius: 5px;
+	}
+
+	&__header {
+		display: flex;
+		justify-content: space-between;
+
+		button {
+			cursor: pointer;
+			border: none;
+			background-color: #FFFFFF;
+		}
+	}
+
+	input {
+		margin: 20px 0;
+	}
+}
+
+.drop-area {
+	width: 100%;
+	height: calc(100vh - 50px - 40px);
+	margin: 20px;
+	border: dashed $font-color 2px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 48px;
+}
+
+.loader {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: calc(100vh - 50px);
+
+	.lds-dual-ring {
+		display: inline-block;
+		width: 80px;
+		height: 80px;
+
+		&:after {
+			content: ' ';
+			display: block;
+			width: 64px;
+			height: 64px;
+			margin: 8px;
+			border-radius: 50%;
+			border: 6px solid $font-color;
+			border-color: $font-color transparent $font-color transparent;
+			animation: lds-dual-ring 1.2s linear infinite;
+		}
+
+		@keyframes lds-dual-ring {
+			0% {
+				transform: rotate(0deg);
+			}
+			100% {
+				transform: rotate(360deg);
+			}
+		}
+	}
+}

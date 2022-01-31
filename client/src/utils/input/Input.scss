@@ -1,0 +1,39 @@
+@import '../colors.scss';
+
+input {
+	border: none;
+	border-bottom: $font-color solid 2px;
+	background-color: transparent;
+	width: 100%;
+	padding: 3px;
+	font-size: 1em;
+
+	&:focus {
+		outline: none;
+		transform: scale(1.01);
+	}
+}
+
+::-webkit-input-placeholder {
+	/* Chrome */
+	color: $font-color;
+	font-weight: 700;
+}
+
+:-ms-input-placeholder {
+	/* IE 10+ */
+	color: $font-color;
+	font-weight: 700;
+}
+
+::-moz-placeholder {
+	/* Firefox 19+ */
+	color: $font-color;
+	font-weight: 700;
+}
+
+:-moz-placeholder {
+	/* Firefox 4 - 18 */
+	color: $font-color;
+	font-weight: 700;
+}
