@@ -1,7 +1,5 @@
 {
 	"serverPort": 3001,
 	"database": "mongodb://localhost:27017/cloud-storage",
-	"secretKey": "f8048a0cfd42c3da622da95646bcee896ef33d3c",
-	"filePath": "/Users/shukha/Desktop/Projects/cloud-storage/server/files",
-	"staticPath": "/Users/shukha/Desktop/Projects/cloud-storage/server/static"
+	"secretKey": "f8048a0cfd42c3da622da95646bcee896ef33d3c"
 }
